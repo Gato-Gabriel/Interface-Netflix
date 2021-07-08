@@ -1,0 +1,29 @@
+@media screen and (max-width: 700px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin-top: 5px;
+        width: 190px;
+        height: 60px;
+    }
+}
+@media screen and (min-width: 490px){
+    .filmePrincipal .container .descricao, .filmePrincipal .container .titulo {
+        width: 65%;
+    }
+}
+@media screen and (min-width: 980px){
+    .filmePrincipal .container .descricao, .filmePrincipal .container .titulo {
+        width: 56%;
+    }
+}
+@media screen and (max-width: 700px){
+    .owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{
+        display: none;
+    }
+    .owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{
+        display: none;
+    }
+}

@@ -1,0 +1,113 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    /* Variáveis declaradas na 'raiz' do .CSS */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Importante para se manter a proporção dos elementos (fazer com que eles não aumentem de tamanho caso texto ultrapasse) */
+}
+
+/* Elementos base */
+body {
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    /* 27, 24, 24 */
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+
+header .logo {
+    margin-left: 14px;
+
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+
+    user-select: none;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+    font-family: 'Arial Black';
+    font-size: 16px;
+}
+
+header nav a:hover {
+    color: #FFF;
+}
+.titulo {
+    font-size: 44px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Filme principal da tela */
+.filmePrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/otgw-poster.jpg') ;
+    background-size: cover;
+}
+.filmePrincipal .container {
+    margin: 30px 0px;
+    margin-left: 46px;
+    
+}
+.filmePrincipal .container .descricao {
+    font-size: 19px;
+    margin-bottom: 40px;
+    margin-top: 24px;
+}
+.filmePrincipal button {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+
+    border: none;
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.filmePrincipal button:hover {
+    background-color: white;
+    color: var(--preto);
+}
+.filmePrincipal button i {
+    margin-right: 8px;
+}
+
+/* Carrossel */
+.caixaFilme {
+    height: 100%;
+    width: 100%;
+    display: block;  /* 16:30 */
+}
+.filmesCarrossel {
+    margin-top: 26px;
+    
+}
+.filmesCarrossel .titulo {
+    font-size: 26px;
+    padding: 15px 16px;
+}
+.owl-carousel {
+    border: 1px solid white;
+    padding: 5px 8px;
+}
